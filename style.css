@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  max-width: 900px;
+  width: 100%;
+  padding: 110px 40px 30px 40px;
+  margin: 0 auto;
+}
+
+.topsection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  width: 100%;
+}
+
+h1 {
+  font-family: "PT Serif", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+  letter-spacing: -0.045em;
+}
+
+.desc {
+  width: 100%;
+}
+
+.desc > h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+.desc > p {
+  font-family: "Poppins", sans-serif;
+  font-style: 400;
+  font-style: 18px;
+  line-height: 27px;
+}
+
+.middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  width: 100%;
+}
+
+.person {
+  cursor: pointer;
+  width: 100%;
+}
+
+.two,
+.five {
+  margin-top: 80px;
+}
+
+img {
+  width: 238px;
+  height: 340px;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+
+img:hover {
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+  transform: scale(1.05);
+}
+
+.job {
+  font-family: "PT Serif", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 270px;
+  left: 130px;
+  transform: rotate(90deg);
+}
+
+.name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 15px;
+}
+
+.bottom {
+  color: var(--gray-one);
+  text-align: center;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--gray-one);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(204, 74, 63);
+}
