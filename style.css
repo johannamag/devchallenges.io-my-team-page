@@ -117,3 +117,36 @@ a {
 a:hover {
   color: rgb(204, 74, 63);
 }
+
+@media screen and (max-width: 467px) {
+  .topsection {
+    grid-template-columns: 1fr;
+  }
+
+  .middle {
+    grid-template-columns: 1fr 1fr;
+  }
+  .person > img {
+    width: 100%;
+    height: 250px;
+  }
+  .job {
+    bottom: 215px;
+    left: 105px;
+  }
+  .two,
+  .four,
+  .six {
+    margin-top: 70px;
+  }
+  .five {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .job {
+    bottom: 230px;
+    left: 85px;
+  }
+}
